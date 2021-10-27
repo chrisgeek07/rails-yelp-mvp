@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row mb-3">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="card mt-4">
+        <div class="card-body">
+          <h1> <%= @restaurant.name %> </h1>
+          <p> <%= @restaurant.address %></p>
+          <p> <%= @restaurant.category %></p>
+          <p> <%= @restaurant.address %> </p>
+          <p> <%= @restaurant.phone_number %> </p>
+          <%= link_to 'Back', restaurants_path, class: 'btn btn-secondary mt-2' %>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

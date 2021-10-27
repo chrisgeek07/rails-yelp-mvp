@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row mb-1">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h1>List of Restaurants</h1>
+      <ul class="list-group">
+        <% @restaurants.each do |restaurant|%>
+          <li class="list-group-item">
+            <%= link_to restaurant.name, restaurant_path(restaurant) %>
+          </li>
+            <hr>
+        <% end %>
+      </ul>
+      <%= link_to 'New Restaurant', new_restaurant_path, class: 'btn btn-primary mt-2' %>
+    </div>
+  </div>
+</div>
